@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userdash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/gredient3"
+        android:id="@+id/toolbarLayoutMain"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pngegg" />
+
+        <TextView
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Geofencing Food Place"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/ourmenu"
+        app:labelVisibilityMode="labeled"
+        app:itemRippleColor="#21C063"
+        android:outlineAmbientShadowColor="@color/black10"
+        android:background="@color/surface_container"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayoutMain">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/geo" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

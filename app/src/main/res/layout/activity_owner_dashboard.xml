@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OwnerDashboard">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/lightGrey"
+        android:id="@+id/toolbarLayoutMain"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/offer" />
+
+        <TextView
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Offer Ease"
+            android:layout_marginStart="20dp"
+            android:textColor="#3D373E"
+            android:textSize="18dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/toolbarLayoutMain"
+        android:id="@+id/client2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="18dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rel_img"
+                android:layout_centerVertical="true"
+                android:layout_width="70dp"
+                android:elevation="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/color2"
+                android:layout_height="70dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/shopping2"
+                    android:padding="10dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/rel_img"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:id="@+id/text_avg_scores4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Shop"
+                    android:textColor="@color/blue10_que"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_avg_scores4"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Add Offers on Product."
+                    android:textColor="@color/black10"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/place2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/client2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="18dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rel_img1"
+                android:layout_centerVertical="true"
+                android:layout_width="70dp"
+                android:elevation="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/color3"
+                android:layout_height="70dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/building"
+                    android:id="@+id/img2"
+                    android:padding="7dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/rel_img1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/blue10_que"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/poppinsbold"/>
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add review on Place."
+                    android:layout_below="@id/text1"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black10"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_regular"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/food2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/place2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="18dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rel_img2"
+                android:layout_centerVertical="true"
+                android:layout_width="70dp"
+                android:elevation="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/color3"
+                android:layout_height="70dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngegg"
+                    android:id="@+id/img3"
+                    android:padding="7dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/rel_img2"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:id="@+id/text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/blue10_que"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/poppinsbold"/>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Offer on Foods."
+                    android:layout_below="@id/text21"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black10"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_regular"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

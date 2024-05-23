@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DummyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/gredient3"
+        android:id="@+id/toolbarLayoutMain"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pngegg" />
+
+        <TextView
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Geofencing Food Place"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayoutMain"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Enter  Detail Of Your Shop "
+                android:textSize="18dp"
+
+              />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shop_name_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/black10"
+                app:hintTextColor="@color/black10"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Shop Name"
+                    android:inputType="textLongMessage"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shop_address_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_name_l"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/black10"
+                app:hintTextColor="@color/black10"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Address"
+                    android:inputType="textLongMessage"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shop_num_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_address_l"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/black10"
+                app:hintTextColor="@color/black10"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Helpline Number"
+                    android:inputType="textLongMessage"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shop_landmark_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_num_l"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/black10"
+                app:hintTextColor="@color/black10"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Landmark"
+                    android:inputType="textLongMessage"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/textview55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_below="@+id/shop_landmark_l"
+                android:text="Enter Product Detail "
+                android:textSize="18dp"
+               />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shop_product_name_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview55"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/black10"
+                app:hintTextColor="@color/black10"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Product Name"
+                    android:inputType="textLongMessage"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/shop_product_offer_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_product_name_l"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/black10"
+                app:hintTextColor="@color/black10"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edprice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Product Offer"
+                    android:inputType="textLongMessage"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_below="@+id/shop_product_offer_l"
+                android:text="Enter Rating Of Product "
+                android:textSize="18dp"
+                />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:layout_below="@id/tv_rating"
+                android:rating="3.5"
+                android:progressTint="#F4DC06"
+                android:progressBackgroundTint="@color/grey10"
+                android:stepSize="1.0" />
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_below="@+id/ratingBar"
+                android:text="Upload Shop Photo "
+                android:textSize="18dp"
+             />
+            <ImageView
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/pngegg"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:layout_below="@id/textview2"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rel_layout_upload"
+                android:background="@drawable/dotted_border"
+                android:layout_below="@id/imageButton2"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_height="80dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="#e8e6fe"
+                    app:cardCornerRadius="25dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/upload"
+                        android:layout_margin="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@id/cardview"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click to Upload file"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/blue10_que"
+                        />
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_below="@id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maximum file size is 50 MB"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black10"
+                        />
+                    <TextView
+                        android:id="@+id/textview5"
+                        android:layout_below="@id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(File type:pdf,doc,docx)"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="#AA4943"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btninsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_layout_upload"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gredient_copy_main"
+                android:text="Upload"
+                android:layout_marginBottom="40dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

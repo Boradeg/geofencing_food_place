@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Userregitser">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="horizontal"
+                android:background="@color/blue20"
+                android:id="@+id/tool_layout3"
+                tools:ignore="MissingConstraints">
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:id="@+id/back_btn_user_reg"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_curved"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/back_black"
+                        android:padding="15dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/pnge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/background_card_gredient_color4"
+                android:layout_marginTop="200dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginHorizontal="30dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Address"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black10"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputOuterFieldStyle"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tv1"
+                        android:id="@+id/email_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeColor="@color/grey10"
+                        app:hintTextColor="@color/black10"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email_si"
+                            style="@style/LoginTextInputInnerFieldStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="true"
+                            android:hint="gokulborade05@gmail.com"
+                            android:inputType="textEmailAddress"
+                            android:textCursorDrawable="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/email_layout"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black10"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputOuterFieldStyle"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tv2"
+                        android:id="@+id/password_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeColor="@color/grey10"
+                        app:hintTextColor="@color/black10"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password_si"
+                            style="@style/LoginTextInputInnerFieldStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="true"
+                            android:hint="Abcd@07."
+
+                            android:inputType="textPassword"
+                            android:textCursorDrawable="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/tv42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:layout_below="@+id/password_layout"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black10"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputOuterFieldStyle"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tv42"
+                        android:id="@+id/email_layout3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeColor="@color/grey10"
+                        app:hintTextColor="@color/black10"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/username_si"
+                            style="@style/LoginTextInputInnerFieldStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="true"
+                            android:hint="Gokul05"
+                            android:inputType="text"
+                            android:textCursorDrawable="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/email_layout3"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black10"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputOuterFieldStyle"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tv8"
+                        android:id="@+id/password_layout2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:boxStrokeColor="@color/grey10"
+                        app:hintTextColor="@color/black10"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/number_si"
+                            style="@style/LoginTextInputInnerFieldStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="true"
+                            android:hint="9056974578"
+                            android:inputType="number"
+                            android:textCursorDrawable="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sign_up_si"
+                        android:layout_below="@id/password_layout2"
+                        android:background="@drawable/gredient_copy_main"
+                        android:text="Sign Up"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_14sdp"
+                        />
+                    <TextView
+                        android:id="@+id/or_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Or"
+                        android:layout_below="@+id/sign_up_si"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/black10"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/or_tv"
+                        android:id="@+id/rel_images"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_height="80dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/lin1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/google"
+                                    />
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/facebook"
+                                    />
+
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/instagram"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already Registered ?"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/rel_images"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black10"
+                        />
+                    <TextView
+                        android:id="@+id/sign_up_tv_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign In"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/rel_images"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/tv18"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/yellow"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

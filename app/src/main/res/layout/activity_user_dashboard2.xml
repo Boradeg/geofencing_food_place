@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserDashboard2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/lightGrey"
+        android:id="@+id/toolbarLayoutMain"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/offer" />
+
+        <TextView
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Offer Ease"
+            android:layout_marginStart="20dp"
+            android:textColor="#3D373E"
+            android:textSize="18dp" />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/ourmenu"
+        app:labelVisibilityMode="labeled"
+        app:itemRippleColor="#21C063"
+        android:outlineSpotShadowColor="#21C063"
+        android:backgroundTint="#21C063"
+
+        android:outlineAmbientShadowColor="@color/black10"
+        android:background="@color/surface_container"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom2"
+        android:layout_below="@id/toolbarLayoutMain">
+
+
+    </FrameLayout>
+</RelativeLayout>

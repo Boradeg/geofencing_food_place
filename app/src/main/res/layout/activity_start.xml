@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue20"
+    >
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Get Started ! "
+        android:textSize="@dimen/_23sdp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pnge" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn_start"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gredient_copy_main"
+            android:text="Start"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/_14sdp"
+            />
+        <TextView
+            android:id="@+id/tv_sign_in_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Registered ? "
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_btn_start"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/sign_up_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginStart="5dp"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_btn_start"
+            android:layout_toRightOf="@id/tv_sign_in_start"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/yellow"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

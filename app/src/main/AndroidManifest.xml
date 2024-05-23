@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/geo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/geo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Geofencing_food_place"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UserDashboard2"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activities.StartActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Place.Placedetails"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true" />
+        <activity
+            android:name=".Userregitser"
+            android:exported="false" />
+
+        <activity
+            android:name=".popnotify"
+            android:exported="false" />
+        <activity
+            android:name=".Showplace"
+            android:exported="true" />
+        <activity
+            android:name=".ShowFoodOffer"
+            android:exported="false" />
+        <activity
+            android:name=".Locationplace"
+            android:exported="true" />
+        <activity
+            android:name=".LocationFood"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Shops.prodetails"
+            android:exported="false" />
+        <activity
+            android:name=".Showshopoffer"
+            android:exported="false" />
+        <activity
+            android:name=".Locationshop"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".Place.Addplace"
+            android:exported="true" />
+        <activity
+            android:name=".Foods.Addfood"
+            android:exported="true" />
+        <activity
+            android:name=".Shops.Addshop"
+            android:exported="true" />
+        <activity
+            android:name=".User.UserLoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activities.OwnerDashboard"
+            android:exported="false" />
+
+        <activity
+            android:name=".Sign_in_and_register.LoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Sign_in_and_register.RegistrationActivity"
+            android:exported="true" >
+        </activity>
+    </application>
+
+</manifest>
