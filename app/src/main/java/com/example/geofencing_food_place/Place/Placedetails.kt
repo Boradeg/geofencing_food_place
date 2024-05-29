@@ -35,9 +35,12 @@ class Placedetails : AppCompatActivity() {
         val lati = intent.getDoubleExtra("lati", 0.0)
         val longi = intent.getDoubleExtra("longi", 0.0)
         val url = intent.getStringExtra("url")
-        // Glide.with(applicationContext).load(url).into(binding.image)
+        Glide.with(applicationContext).load(url).into(binding.image)
         var mobileno=intent.getStringExtra("MobileNo")
         Glide.with(applicationContext).load(url).into(binding.image)
+        binding.ivBackBtn.setOnClickListener{
+            finish()
+        }
         binding.trackButton.setOnClickListener {
             try {
                 val uri = Uri.parse("https://www.google.co.in/maps/dir/"+"/"+ Address)

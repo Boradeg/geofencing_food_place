@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.geofencing_food_place.Shops.MyShop;
 import com.example.geofencing_food_place.Shops.prodetails;
 
@@ -41,7 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.idShopAddress.setText("Address : "+vacancy1.getAddress());
         holder.idShopProductOffer.setText(""+vacancy1.getOffer());
         holder.idProductRating.setText(""+vacancy1.getRating().toString());
-       // Glide.with(holder.img1.getContext()).load(vacancy1.getImageurl()).into(holder.img1);
+        Glide.with(holder.img1.getContext()).load(vacancy1.getImageurl()).into(holder.img1);
         holder.likeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

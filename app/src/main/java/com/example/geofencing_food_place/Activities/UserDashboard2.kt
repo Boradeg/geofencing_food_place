@@ -3,6 +3,8 @@ package com.example.geofencing_food_place.Activities
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.geofencing_food_place.Chats.ChatActivity
+import com.example.geofencing_food_place.Chats.ChatFragment
 import com.example.geofencing_food_place.Foods.FoodFragment
 import com.example.geofencing_food_place.Place.PlaceFragment
 import com.example.geofencing_food_place.Profile.ProfileFragment
@@ -53,6 +55,11 @@ class UserDashboard2 : AppCompatActivity() {
                 R.id.profile ->
                 {
                     replaceFragment(ProfileFragment())
+                    true
+                }
+                R.id.chats->
+                {
+                    replaceFragment(ChatFragment())
                     true
                 }
                 else -> {false}

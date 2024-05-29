@@ -24,5 +24,6 @@
         <item name="android:textSize">14sp</item>
         <item name="android:singleLine">true</item>
     </style>
+
     <style name="Theme.Geofencing_food_place" parent="Base.Theme.Geofencing_food_place" />
 </resources>

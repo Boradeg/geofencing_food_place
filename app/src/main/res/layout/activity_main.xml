@@ -55,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginHorizontal="20dp"
                     >
                     <TextView
                         android:id="@+id/tv1"
@@ -74,6 +74,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         app:boxStrokeColor="@color/grey10"
+                        app:helperText="abcd@gmail.com"
                         app:hintTextColor="@color/black10"
                         tools:ignore="MissingConstraints">
 
@@ -83,7 +84,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:cursorVisible="true"
-                            android:hint="gokulborade05@gmail.com"
+                            android:hint="Email"
                             android:inputType="textEmailAddress"
                             android:textCursorDrawable="@null" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -101,10 +102,12 @@
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/LoginTextInputOuterFieldStyle"
                         android:layout_width="match_parent"
+                        app:passwordToggleEnabled="true"
                         android:layout_below="@id/tv2"
                         android:id="@+id/password_layout"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        app:helperText="E.g 123456"
                         app:boxStrokeColor="@color/grey10"
                         app:hintTextColor="@color/black10"
                         tools:ignore="MissingConstraints">
@@ -115,7 +118,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:cursorVisible="true"
-                            android:hint="Abcd@07."
+                            android:hint="Password"
 
                             android:inputType="textPassword"
                             android:textCursorDrawable="@null" />
@@ -124,7 +127,7 @@
                         android:id="@+id/tv42"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Username"
+                        android:text="Enter Name"
                         android:layout_below="@+id/password_layout"
                         android:textSize="@dimen/_14sdp"
                         android:fontFamily="@font/roboto_medium"
@@ -139,6 +142,7 @@
                         android:layout_marginTop="5dp"
                         app:boxStrokeColor="@color/grey10"
                         app:hintTextColor="@color/black10"
+                        app:helperText="E.g Raj"
                         tools:ignore="MissingConstraints">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -147,7 +151,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:cursorVisible="true"
-                            android:hint="Gokul05"
+                            android:hint="Name"
                             android:inputType="text"
                             android:textCursorDrawable="@null" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -169,6 +173,7 @@
                         android:id="@+id/password_layout2"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        app:helperText="E.g 8466774567"
                         app:boxStrokeColor="@color/grey10"
                         app:hintTextColor="@color/black10"
                         tools:ignore="MissingConstraints">
@@ -179,7 +184,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:cursorVisible="true"
-                            android:hint="9056974578"
+                            android:hint="Number"
                             android:inputType="number"
                             android:textCursorDrawable="@null" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -303,4 +308,11 @@
         </RelativeLayout>
 
     </ScrollView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pbar"
+        android:visibility="gone"
+        />
 </RelativeLayout>

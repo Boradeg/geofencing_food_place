@@ -18,24 +18,22 @@ class StartActivity : AppCompatActivity() {
         setContentView(R.layout.activity_start)
         val auth = FirebaseAuth.getInstance()
         val currentUser = auth.currentUser
-        if (currentUser != null) {
-            // User is signed in, navigate to MainActivity
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
-        } else {
-            // No user is signed in, navigate to LoginActivity
-            startActivity(Intent(this, RegistrationActivity::class.java))
-            finish()
-        }
+//        if (currentUser != null) {
+//            // User is signed in, navigate to MainActivity
+//            startActivity(Intent(this, OwnerDashboard::class.java))
+//            finish()
+//        } else {
+//            // No user is signed in, navigate to LoginActivity
+//            startActivity(Intent(this, HomeActivity::class.java))
+//            finish()
+//        }
         var start = findViewById<AppCompatButton>(R.id.login_btn_start)
         start.setOnClickListener {
 
-            startActivity(Intent(this, RegistrationActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }
-        supportActionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this,
-            R.color.black
-        )))
+
 
 
     }

@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="10dp"
+
     tools:context=".Shops.prodetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="10dp"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -30,9 +34,8 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:id="@+id/layout2"
-        android:layout_marginHorizontal="10dp"
         android:background="@color/lightGrey"
         android:layout_marginVertical="10dp"
         android:layout_below="@id/layout1"
@@ -41,8 +44,8 @@
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/shop3"
+            android:layout_height="match_parent"
+            android:src="@drawable/shopping_food"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginHorizontal="10dp"
@@ -55,6 +58,7 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_margin="5dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_below="@id/layout2"
         android:id="@+id/layout3"
         android:layout_height="wrap_content">
@@ -114,7 +118,6 @@
             android:layout_height="15dp"
             android:layout_alignParentRight="true"
             android:id="@+id/imageView23"
-            android:layout_marginEnd="8dp"
             android:src="@drawable/star"
             android:layout_centerVertical="true"
             android:fontFamily="@font/poppinsregular"/>
@@ -219,13 +222,13 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="10dp"
         android:text="Track Shop Location"
         android:background="@drawable/purple_btn_bg"
         android:id="@+id/track_button"
        android:layout_below="@id/layout7"
         android:layout_height="wrap_content"
         />
+
     <androidx.appcompat.widget.AppCompatButton
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
@@ -235,116 +238,9 @@
         android:background="@drawable/purple_btn_bg"
         android:id="@+id/sendSmsButton"
         android:layout_below="@id/track_button"
-        android:layout_margin="8dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         />
+
+    </RelativeLayout>
 </RelativeLayout>
-<!--<LinearLayout-->
-<!--android:layout_width="350dp"-->
-<!--android:layout_height="wrap_content"-->
-<!--android:layout_marginVertical="6dp"-->
-<!--android:layout_marginStart="16dp"-->
-<!--android:visibility="gone"-->
-<!--android:layout_marginTop="40dp"-->
-
-<!--android:orientation="vertical">-->
-
-
-<!--<ImageView-->
-<!--    android:id="@+id/image"-->
-<!--    android:layout_width="250dp"-->
-<!--    android:layout_height="250dp"-->
-<!--    android:layout_marginLeft="35dp"-->
-<!--    android:layout_marginTop="10dp" />-->
-
-
-<!--<TextView-->
-<!--    android:id="@+id/name"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:layout_marginTop="50dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-
-<!--<TextView-->
-<!--    android:id="@+id/address"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-
-<!--<TextView-->
-<!--    android:id="@+id/mobile_number"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-
-<!--<TextView-->
-<!--    android:id="@+id/landmark"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-
-<!--<TextView-->
-<!--    android:id="@+id/offer"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-
-
-
-
-
-<!--<TextView-->
-<!--    android:id="@+id/rating"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-<!--<TextView-->
-<!--    android:id="@+id/product_name"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginStart="8dp"-->
-<!--    android:text="Arya"-->
-<!--    android:textColor="@color/black"-->
-<!--    android:textSize="20sp" />-->
-
-
-
-<!--<androidx.appcompat.widget.AppCompatButton-->
-<!--    android:id="@+id/track_button"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:layout_marginTop="65dp"-->
-<!--    android:background="#018de5"-->
-<!--    android:textColor="@color/white"-->
-<!--    android:text="Track" />-->
-
-
-<!--<androidx.appcompat.widget.AppCompatButton-->
-<!--    android:id="@+id/send_sms_button"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:layout_marginTop="10dp"-->
-<!--    android:background="#018de5"-->
-<!--    android:textColor="@color/white"-->
-<!--    android:text="Send sms" />-->
-
-
-<!--</LinearLayout>-->

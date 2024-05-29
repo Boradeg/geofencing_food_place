@@ -1,10 +1,10 @@
-package com.example.geofencing_food_place
+package com.example.geofencing_food_place.Activities
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.example.geofencing_food_place.Activities.StartActivity
+import com.example.geofencing_food_place.R
 
 @SuppressLint("CustomSplashScreen")
 class Splashscreen : AppCompatActivity() {

@@ -3,10 +3,16 @@ package com.example.geofencing_food_place.Activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import com.example.geofencing_food_place.Chats.ChatFragment
 import com.example.geofencing_food_place.Foods.Addfood
+import com.example.geofencing_food_place.Foods.FoodFragment
 import com.example.geofencing_food_place.Place.Addplace
+import com.example.geofencing_food_place.Place.PlaceFragment
+import com.example.geofencing_food_place.Profile.ProfileFragment
 import com.example.geofencing_food_place.R
 import com.example.geofencing_food_place.Shops.Addshop
+import com.example.geofencing_food_place.Shops.ShopOfferFragment
 import com.example.geofencing_food_place.databinding.ActivityOwnerDashboardBinding
 
 class OwnerDashboard : AppCompatActivity() {
@@ -18,27 +24,41 @@ class OwnerDashboard : AppCompatActivity() {
         setContentView(R.layout.activity_owner_dashboard)
 
         binding = ActivityOwnerDashboardBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
+//        binding.bottom2.setOnNavigationItemSelectedListener {
+//            when(it.itemId)
+//            {
+//                R.id.dashboard ->
+//                {
+//                    replaceFragment(ProfileFragment())
+//                    true
+//                }
+//                R.id.profile ->
+//                {
+//                    replaceFragment(ProfileFragment())
+//                    true
+//                }
+//                R.id.chats->
+//                {
+//                    replaceFragment(ChatFragment())
+//                    true
+//                }
+//                else -> {false}
+//            }
+//        }
 
-        val img1 = binding.client2
-        val img2 = binding.place2
-        val img3 = binding.food2
-
-
-
-        img1.setOnClickListener {
+        binding.client2.setOnClickListener {
             val intent = Intent(applicationContext,
                 Addshop::class.java)
             startActivity(intent)
         }
-        img2.setOnClickListener {
+        binding.place2.setOnClickListener {
             val intent = Intent(applicationContext,
                 Addplace::class.java)
             startActivity(intent)
         }
 
-        img3.setOnClickListener {
+        binding.food2.setOnClickListener {
             val intent = Intent(applicationContext,
                 Addfood::class.java)
             startActivity(intent)
@@ -46,4 +66,5 @@ class OwnerDashboard : AppCompatActivity() {
 
 
     }
+
 }
